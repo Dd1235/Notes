@@ -1,0 +1,2 @@
+- In Java, you can instantiate an interface using lambda expressions or anonymous classes if the interface is a functional interface (an interface with a single abstract method). The Runnable interface qualifies as a functional interface 
+- Either add a catch clause or add a throws clause to the method signature to handle checked exceptions
