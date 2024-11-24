@@ -86,3 +86,8 @@ Context Switching: The operating system switches between threads, giving each on
    System.out.println(future.get()); // Waits for and retrieves result
    executor.shutdown();
    ```
+## Concurrent Collections
+
+Concurrent Collections in Java are part of the java.util.concurrent package. They provide thread-safe and highly efficient implementations of data structures that can be used in multi-threaded environments.
+
+## Countdown Latch
