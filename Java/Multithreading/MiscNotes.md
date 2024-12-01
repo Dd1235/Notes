@@ -1,2 +1,3 @@
 - In Java, you can instantiate an interface using lambda expressions or anonymous classes if the interface is a functional interface (an interface with a single abstract method). The Runnable interface qualifies as a functional interface 
 - Either add a catch clause or add a throws clause to the method signature to handle checked exceptions
+- Generics use type erasure, that is type checking is done during compile time but the information is erased at runtime, but in CPP template instantatiations exist as separate entities during runtime increasing binary size as separate code is generated for each type. Templates offer greater flexibility.
