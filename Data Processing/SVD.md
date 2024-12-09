@@ -32,10 +32,10 @@ A = U \Sigma V^T
 \]
 
 where:
-- \( A \) is an \( m \times n \) matrix,
-- \( U \) is an \( m \times m \) unitary/orthogonal matrix (columns are left singular vectors),
-- \( \Sigma \) is an \( m \times n \) diagonal matrix with non-negative singular values (\( \sigma_i \)) on the diagonal,
-- \( V \) is an \( n \times n \) unitary/orthogonal matrix (columns are right singular vectors),
+\( A \) is an \( m \times n \) matrix,
+\( U \) is an \( m \times m \) unitary/orthogonal matrix (columns are left singular vectors),
+ \( \Sigma \) is an \( m \times n \) diagonal matrix with non-negative singular values (\( \sigma_i \)) on the diagonal,
+ \( V \) is an \( n \times n \) unitary/orthogonal matrix (columns are right singular vectors),
 
 The diagonal entries of \( \Sigma \), denoted as \( \sigma_1, \sigma_2, \ldots \), are the singular values of \( A \), satisfying \( \sigma_1 \geq \sigma_2 \geq \cdots \geq 0 \).
 
@@ -99,3 +99,34 @@ where:
 - Positive semi definite matrices, guaranteed to have non zero eigen values
 - v -> Eigen vectors of the correlation matrix of the columns of A, the singular values are the square roots of the eigen values, mxm , smaller for tall skinny matrices
 - u -> Eigen vectors of the correlation matrix of the rows of  A, nxn, larger for tall skinny matrices, usually don't want to compute this, there are better ways of computing the SVD
+
+## The Frobenius norm
+
+- The Frobenius norm of a matrix is the square root of the sum of the squares of the elements of the matrix
+
+\[
+\|A\|_F = \sqrt{\sum_{i=1}^m \sum_{j=1}^n |a_{ij}|^2}
+\]
+
+## Method of Computing: Method of Snapshots
+
+- Invented in the field of fluid dynamics
+- compute X^TX column by column and get V and \( \hat{\Sigma} \)
+- compute \( \hat{U} \) from these
+
+## Matrix Completion
+
+- Netflix prize: given a matrix with missing entries, fill in the missing entries
+- person 1, ..., person m. n entries for each, for n movies.
+- you will only have few 'eigen tastes'
+- RPCA on this
+
+## Unitary Transformations and Geometry
+
+- Unitary matrces preserve the angle between any two vectors in the vector space they are tranforming
+- Preserve lengths of vectors
+- eg Unitary Transformation: Fourier transform, takes the vectors and rotates them 
+- they just rotate vectors
+- <x,y> =  <Ux, Uy> unitary transformation U
+- Sphere in R^m (U) -> (X) -> Ellipsoid in R^n
+- semi major axis of the ellipsoid are the singular values

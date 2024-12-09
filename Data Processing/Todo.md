@@ -8,9 +8,11 @@ To do:
 [] Positive definite matrices
 [] Finite element method
 [] Lagrange Multiplier
-[ ] Chapter 6 of Linear Algebra and its Applications by Gilbert Strang
+[] Chapter 6 of Linear Algebra and its Applications by Gilbert Strang
+[] Matlab
 
 
 Sources:
 1. https://www.cs.cmu.edu/~elaw/papers/pca.pdf
 2. https://www.youtube.com/watch?v=gXbThCXjZFM&list=PLMrJAkhIeNNSVjnsviglFoY2nXildDCcv
+3. [book](https://databookuw.com/databook.pdf)
